@@ -12,6 +12,7 @@ request.onload = function () {
     data.forEach(element => {
         console.log(element.name);
     });
+    document.getElementById("root").textContent = "REST country names printed in console!";
 }
 
 request.send();
