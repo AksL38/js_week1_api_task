@@ -1,0 +1,27 @@
+QUESTION: HOW TO COPY BY VALUE COMPOSITE DATA TYPE?
+
+ANSWER:
+     A) Shallow copy:
+       Shallow copy is copying by value of only first level elements of object without copying by value any nested composite types. There are two
+ways to achieve this:
+       1)... spread operator:
+       Spread ... operator expands elements of iterable which then can be used arguments for creation of new object
+       Example:
+           let oldObj = [1,2,3];
+           let newObj = [...oldObj];
+           
+       2)Using Object.assign():
+       This method copies all own enumerable properties from source object/s to target object
+       Example:
+           let oldObj = {a:1, b:2};
+           let newObj = Object.assign({}, oldObj);
+           
+     B) Deep copy:
+        In deep copy, even nested composite datatypes are copied by value;
+        It is done using JSON.parse and JSON.stringify. JSON.stringify will take javascript object and return JSON string. 
+        While JSON.parse will take JSON string and return new Javascript object. Using both together will give us new object
+        copied by value
+        Example:
+           let nested = [3,4];
+           let oldObj = [1,2,nested];
+           let newObj = JSON.parse(JSON.stringify(oldObj));
