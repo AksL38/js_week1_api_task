@@ -1,0 +1,13 @@
+QUESTION: DIFFERENCE BETWEEN COPY BY VALUE AND COPY BY REFERENCE
+
+ANSWER:
+
+             Variable is an identifier which points to particular memory address. When variable is referenced in a computation, whatever data is contained at that
+ memory address is used for computation in place of that variable identifier. When one variable is assigned to another, if old variable is of primitive type like Number,
+ String or Boolean then actual data at memory address is copied to new memory address pointed by new variable. This is called copying by value. But if old variable is 
+ of composite type like array, object then new variable simply points to same memory address of old variable and they share same data in the memory. This is copying by
+ reference.
+ 
+            When new variable assignment consists of coppying by value, changing either old or new variable afterwards doesn't affect value of other as both would be
+ pointing to different memory addresses. But when new variable assignment is by copying by reference, changing value of either old and new variable will affect the other
+ as both variables point to same memory address. In a way copying by reference is not true copying but simply giving another name/alias to old variable. 
