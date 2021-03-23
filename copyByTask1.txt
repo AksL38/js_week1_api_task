@@ -10,4 +10,4 @@ ANSWER:
  
             When new variable assignment consists of coppying by value, changing either old or new variable afterwards doesn't affect value of other as both would be
  pointing to different memory addresses. But when new variable assignment is by copying by reference, changing value of either old and new variable will affect the other
- as both variables point to same memory address. In a way copying by reference is not true copying but simply giving another name/alias to old variable. 
+ as both variables point to same memory address. In a way copying by reference is not true copying but simply giving another name/alias to old variable.
